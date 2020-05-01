@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess-the-number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="definirNro()">
+    
+    <header>
+        <h1>¡Bienvenidos a Adivina el Número! ¿Podrás adivinarlo?</h1>
+    </header>
+
+    <main>
+        <div id="seccion">
+            <h2>Juego Principal</h2>
+
+            <div class="flex-container">
+                <h3>Ingresa el número en el recuadro de abajo (de 0 a 100).</h3>
+                <input type="text" id="txtNum">
+
+                <button id="btnEnviar" class="btn btn-secondary" onclick="validar()">Ingresar</button>
+
+                <div id="resultados">
+                    <!-- Acá vamos a decirle al usuario si adivinó, tiro un numero menor o mayor, por eso ahora esta vacio -->
+                    
+                </div>
+
+                <button id="btnReiniciar" class="btn btn-dark" onclick="reiniciar()" style="display: none;">Volver a Jugar</button>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

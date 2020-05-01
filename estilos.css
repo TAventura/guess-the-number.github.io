@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    margin: 1%;
+    background-color: #333;
+    color: #bbb;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+#seccion  {
+    margin: 1.5%;
+    background-color: rgba(129, 5, 212, 0.3);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+    padding: 2%;
+}
+
+.flex-container * {
+    margin: .5%;
+}
+
+input {
+    text-align: center;
+    font-size: 4vw;
+}
